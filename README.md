@@ -1,2 +1,0 @@
-# linkuri
-link-uri preferate
