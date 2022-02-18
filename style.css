@@ -1,39 +1,101 @@
-html{
-    background: black url(background.jpg)  center center no-repeat;
-    background-size: cover; color: white;
-    
+html {
+  background: black url("background.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
 }
-body{ 
-    display: block;
-    place-items: center;
-    margin: 0;
-    font-family: inter, Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.5em;}
-    @media ( min-width: 500px) {body {display: grid;} }
 
+body {
+  display: block;
+  place-items: center;
+  margin: 0;
+  font-family: inter, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5em;
+}
 
- .container{
-    background: rgba(79, 109, 245, 0.8);
-    padding: 1rem;
+@media (min-width: 500px) {
+  body {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+.container {
+  background: rgba(79, 109, 245, 0.8);
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: clamp(1rem, 2vw, 2rem);
+  line-height: 1.5em;
+}
+
+@media (min-width: 300px) {
+  .container {
+    margin: 2vh;
+    padding: 2rem;
     border-radius: 2rem;
-    font-size: clamp(1rem, 2vw, 2rem);
-    line-height: 1.5em;
- }
- @media ( min-width: 300px) {.container {margin: 2vh; padding: 2rem; border-radius: 2rem;} }
+  }
+}
 
+.Avatar {
+  display: block;
+  float: left;
+  width: 115px;
+  height: auto;
+  margin: 0 1em 0 0;
+  border-radius: 50%;
+}
 
+@media (min-width: 380px) {
+  .Avata {
+    float: left;
+  }
+}
 
-header{   }
- .Avatar{display: block; float: left; width: 115px; height: auto; margin: 0 1em 0 0; border-radius: 50%; }
-   @media ( min-width: 380px) {.Avata { float: left;} }
- .TitlulPaginii{ display: block; margin: 0; font-size: clamp(1rem, 4vw, 6rem);line-height: 1em ;}
+.TitlulPaginii {
+  display: block;
+  margin: 0;
+  font-size: clamp(1rem, 4vw, 6rem);
+  line-height: 1em;
+}
 
- main{ }
-  .ListaLinkuri{ display: block; margin: 0; padding: 0; border-top: 3px solid white; }
-   .ListaItem{ display: block; margin: 0; padding: 0; border-bottom: 3px solid white; }
-    .ListaLink{ display: block; padding: 0.5em; color: #fff; text-decoration: none; }
-     .ListaLink:hover { background: black; color: red;}
-     .ListaTitlu{ display: block; margin: 0; padding: 0; font-size: 0.8em; line-height: 1.5em;  }
-      .ListaText{  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-size: 0.8em; }
+.ListaLinkuri {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid white;
+}
 
+.ListaItem {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 3px solid white;
+}
+
+.ListaLink {
+  display: block;
+  padding: 0.5em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.ListaLink:hover {
+  background: black;
+  color: red;
+}
+
+.ListaTitlu {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.ListaText {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+}
+/*# sourceMappingURL=style.css.map */
